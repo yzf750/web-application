@@ -58,3 +58,8 @@ if __name__ == "__main__":
     
     main()
 ```
+Python start a simple web server
+-------------------------------
+```bash
+python -m SimpleHTTPServer 8080
+```
