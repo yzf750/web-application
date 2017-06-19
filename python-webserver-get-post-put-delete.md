@@ -1,7 +1,7 @@
 Reflects the requests from HTTP methods GET, POST, PUT, and DELETE
 -------------------------------------------------------------------
 
-'''python
+'''
 
 #!/usr/bin/env python
 Reflects the requests from HTTP methods GET, POST, PUT, and DELETE
@@ -59,4 +59,5 @@ if __name__ == "__main__":
     (options, args) = parser.parse_args()
     
     main()
+
 ```
