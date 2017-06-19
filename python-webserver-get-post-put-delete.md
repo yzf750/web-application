@@ -1,9 +1,11 @@
 Reflects the requests from HTTP methods GET, POST, PUT, and DELETE
 -------------------------------------------------------------------
+
 '''python
+
 #!/usr/bin/env python
-# Reflects the requests from HTTP methods GET, POST, PUT, and DELETE
-# Written by Nathan Hamiel (2010)
+Reflects the requests from HTTP methods GET, POST, PUT, and DELETE
+Written by Nathan Hamiel (2010)
 
 from BaseHTTPServer import HTTPServer, BaseHTTPRequestHandler
 from optparse import OptionParser
