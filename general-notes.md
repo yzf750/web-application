@@ -10,8 +10,13 @@ curl -kis  http://xxx.xxx.xxx.xxx/etc/passwd
 ```
 Curl - Grab HTTP Headers
 ------------------------
+HTTP
 ```
 curl -LIN <host>
+```
+HTTPS
+```
+curl -LIN -k <host>
 ```
 Find Writeable Directories (Good for uploading shells)
 ------------------------
