@@ -21,3 +21,13 @@ find / -type d \( -perm -g+w -or -perm -o+w \) -exec ls -adl {} \;
 ```bash
 find / -type d \( -perm -g+w -or -perm -o+w \) -exec ls -adl {} \; | grep www-data
 ```
+
+Mass download files by id
+------------------------
+```bash
+#!/bin/bash
+   for i in `seq 1000 5000`;
+      do
+         wget https://your.site.com:80/pathtodownloads/file.php?id=$i
+      done
+```
