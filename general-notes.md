@@ -36,3 +36,11 @@ Mass download files by id
          wget https://your.site.com:80/pathtodownloads/file.php?id=$i
       done
 ```
+Nikto scan all and output to html
+------------------------
+```
+nikto -Display V -o results.html -Format htm -h http://xxx.xxx.xxx.xx:80/directory/
+```
+
+
+
