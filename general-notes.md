@@ -12,11 +12,11 @@ Curl - Grab HTTP Headers
 ------------------------
 HTTP
 ```
-curl -LIN <host>
+curl -LIN http://www.yoursite.com
 ```
 HTTPS
 ```
-curl -LIN -k <host>
+curl -LIN -k https://www.yoursite.com
 ```
 Find Writeable Directories (Good for uploading shells)
 ------------------------
