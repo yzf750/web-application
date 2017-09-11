@@ -45,7 +45,7 @@ nikto -Display V -o results.html -Format htm -h http://xxx.xxx.xxx.xx:80/directo
 Test SNI DNS lookup using openssl
 ------------------------
 ```
-Use Burp Collaborator client to generate DNS name (On the menu - BURP/Burp Collaborator Client/Copy to Clipboard)
+## Use Burp Collaborator client to generate DNS name (On the menu - BURP/Burp Collaborator Client/Copy to Clipboard)
 openssl s_client -connect xxx.yourdomain.xx:443 -servername zzzzzzzzzzzzzzzzzzzzzzzzzzzz.burpcollaborator.net
 ```
 
