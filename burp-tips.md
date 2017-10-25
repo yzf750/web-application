@@ -1,4 +1,4 @@
-Use Kerberos Authentication
+Burp Kerberos Authentication
 ------------------------
 ```
 #Download Link
