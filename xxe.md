@@ -1,5 +1,5 @@
 POST http://example.com/xml HTTP/1.1
- 
+``````
 <!DOCTYPE foo [
   <!ELEMENT foo ANY>
   <!ENTITY bar SYSTEM
@@ -8,3 +8,4 @@ POST http://example.com/xml HTTP/1.1
 <foo>
   &bar;
 </foo>
+``````
