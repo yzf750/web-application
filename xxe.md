@@ -14,7 +14,7 @@ POST http://example.com/xml HTTP/1.1
 </foo>
 ``````
 Response
-``````xml
+`````
 HTTP/1.0 200 OK
  
 DISTRIB_ID=Ubuntu
