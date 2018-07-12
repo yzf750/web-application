@@ -2,7 +2,7 @@ python-simple-ssl-server
 ------------------------
 ```
 python simple-https-server.py
-
+```
 generate server.xml with the following command:
 ------------------------
 ```bash
