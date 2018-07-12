@@ -1,7 +1,7 @@
 Run the server
 ------------------------
 ```
-python simple-https-server.py
+python python-simple-ssl-server
 ```
 generate server.xml with the following command:
 ------------------------
