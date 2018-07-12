@@ -1,4 +1,4 @@
-python-simple-ssl-server
+Run the server
 ------------------------
 ```
 python simple-https-server.py
@@ -8,7 +8,7 @@ generate server.xml with the following command:
 ```bash
 openssl req -new -x509 -keyout server.pem -out server.pem -days 365 -nodes
 ```
-Begin Script
+Script
 ------------------------
 ```
 import BaseHTTPServer, SimpleHTTPServer
