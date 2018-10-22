@@ -1,3 +1,5 @@
+```ruby
+
 #!/usr/bin/ruby
 # Simple SSL server using ruby that reflects anything sent to it
 # Works for GET POST etc....
@@ -121,4 +123,5 @@ loop do
     end
   }
 end
+```
 
