@@ -1,4 +1,8 @@
 #!/usr/bin/ruby
+# Simple SSL server using ruby that reflects anything sent to it
+# Works for GET POST etc....
+# Will create the cert files on first run. 
+# openssl req -x509 -newkey rsa:4096 -keyout priv.pem -out cert.pem -days 365 -nodes
 
 IO.write('./cert.pem', '-----BEGIN CERTIFICATE-----
 MIIFYDCCA0igAwIBAgIJAJjAoMlSo60rMA0GCSqGSIb3DQEBCwUAMEUxCzAJBgNV
