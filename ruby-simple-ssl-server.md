@@ -109,6 +109,8 @@ sslContext.key = OpenSSL::PKey::RSA.new(File.open("priv.pem"))
 sslServer = OpenSSL::SSL::SSLServer.new(server, sslContext)
 
 puts "Listening on port #{listeningPort}"
+puts
+puts
 
 loop do
   connection = sslServer.accept
