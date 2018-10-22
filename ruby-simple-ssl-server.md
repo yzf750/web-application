@@ -1,6 +1,5 @@
-Simple SSL server using ruby that reflects anything sent to it
-Works for GET POST etc....
-Will create the cert files on first run. 
+Simple SSL server using ruby that reflects anything sent to it Works for GET POST etc.... Will create the cert files on first run. 
+==================================================================================
 
 ```ruby
 
