@@ -1,6 +1,7 @@
 Commix Reverse Shell
 ====================
 
+READ THIS LINK!!
 https://github.com/commixproject/commix/wiki/Reverse-Shells
 
 Technique 1
