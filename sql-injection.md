@@ -2,7 +2,7 @@ Use Prefix and Suffix for more challenging attacks
 ---------------------------------------------
 ```
 # See example 9 https://pentesterlab.com/exercises/web_for_pentester_II/course
-# Example Chinese char sethttps://www.fileformat.info/info/charset/GBK/list.htm
+# Example Chinese char set https://www.fileformat.info/info/charset/GBK/list.htm
 sqlmap -r ./sqlmap-03.txt --level=5 --risk=3 --batch --prefix=%bf%27 --dbms=mysql
 ```
 
