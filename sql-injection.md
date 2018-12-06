@@ -1,4 +1,4 @@
-Use Prefix and Suffix for more challneging attacks
+Use Prefix and Suffix for more challenging attacks
 ---------------------------------------------
 ```
 # See example 9 https://pentesterlab.com/exercises/web_for_pentester_II/course
