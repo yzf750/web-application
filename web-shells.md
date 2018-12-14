@@ -1,3 +1,7 @@
+More examples here
+-------------------
+https://github.com/jivoi/pentest/tree/master/shell
+
 Simple PHP Webshell
 -------------------
 usage: http://www.yourvictim.com/shellname.php?cmd=whoami
