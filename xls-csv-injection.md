@@ -7,9 +7,9 @@ Run attacking server
 php -S www.attacker.com:80
 
 On attacking server create "index.html" with content you want to change the "fake data" too.
-############ Begin index.html ##################################
+-Begin index.html
 Fake Data
-############ End index.html ####################################
+-End index.html
 
 To fill in multiple cells use multiple html file
 ############ Begin a1.html ##################################
