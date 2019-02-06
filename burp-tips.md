@@ -21,8 +21,11 @@ To configure
 "krb5.conf file"
 - may need to create one, run tests for each of the settings above to determin
 
-# Basic Auth Brute Force using BURP
-http://www.dailysecurity.net/2013/03/22/http-basic-authentication-dictionary-and-brute-force-attacks-with-burp-suite/
+```
 
+Basic Auth Brute Force using BURP
+-----------------------------------
+```
+http://www.dailysecurity.net/2013/03/22/http-basic-authentication-dictionary-and-brute-force-attacks-with-burp-suite/
 ```
 
