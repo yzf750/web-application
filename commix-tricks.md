@@ -4,7 +4,7 @@ Commix Reverse Shell
 READ THIS LINK!!
 https://github.com/commixproject/commix/wiki/Reverse-Shells
 
-Load from saved file (contains cookies, tokens, etc
+Load from saved file (contains cookies, tokens, etc)
 ---------------------------------------------------
 ```bash
 commix -r /must/use/full/path/to/file.txt
