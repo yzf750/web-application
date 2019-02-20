@@ -22,7 +22,7 @@ Mass download files by id
 #!/bin/bash
    for i in `seq 1000 5000`;
       do
-         wget https://your.site.com:80/pathtodownloads/file.php?id=$i
+         wget http://your.site.com:80/pathtodownloads/file.php?id=$i
       done
 ```
 Nikto scan all and output to html
