@@ -1,3 +1,7 @@
+Useful Links
+---------------------------------------------
+https://www.notsosecure.com/data-exfiltration-formula-injection/
+
 Use Webservice Formula to Inject fake data into Speadsheet
 ----------------------------------------------------------
 In cell "A1" enter the following - Could be "First Name" in web form
