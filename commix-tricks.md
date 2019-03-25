@@ -36,7 +36,6 @@ Technique 2
 nc -lvp 1234
 
 # Exploit Found
-
 os_shell
 commix(os_shell)
 reverse_tcp
