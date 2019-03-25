@@ -45,6 +45,7 @@ recon-ng
 
 # Set proxy if needed
 set PROXY localhost:8080
+unset PROXY
 
 # Load xpath module
 use xpath
