@@ -8,6 +8,20 @@ Load from saved file (contains cookies, tokens, etc)
 ---------------------------------------------------
 ```bash
 commix -r /must/use/full/path/to/file.txt
+
+# make sure you add the "INJECT_HERE" where it is needed
+########## CONTENTS OF FILE.TXT ################################# 
+GET /commandexec/example2.php?ip=127.0.0.1INJECT_HERE HTTP/1.1
+Host: xxx.xxx.xxx.xxx
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://xxx.xxx.xxx.xxx/
+Connection: close
+Upgrade-Insecure-Requests: 1
+########## CONTENTS OF FILE.TXT ################################# 
+
 ```
 Examples
 ---------
