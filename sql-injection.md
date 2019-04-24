@@ -11,7 +11,7 @@ Useful Switches
 –-crawl=4 (depth of pages to crawl)
 --proxy=http://127.0.0.1:8080
 –identify-waf
-
+```
 
 SQLite sample 
 -------------
@@ -69,7 +69,7 @@ prefix='('
 prefix='\xBF'''
 prefix='%bf%27'
 prefix=''''
---Attack using the middle of the url
+# Attack using the middle of the url
 sqlmap.py -p host -u "example.com?host=" --prefix "http://anotherexample.com?bar=1" --suffix "&restoftheurl=whatever"
 ```
 Sqlmap quick cheat sheet
