@@ -1,3 +1,5 @@
+https://github.com/sqlmapproject/sqlmap/wiki/Usage
+
 Use Prefix and Suffix for more challenging attacks
 ---------------------------------------------
 ```
