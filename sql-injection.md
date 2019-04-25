@@ -19,6 +19,7 @@ Useful Switches
 --search -C credit
 --search -C creditcard
 --list-tampers
+-v 0-6
 
 # SQL injection techniques to use.
 # Valid: a string composed by B, E, U, S, T and Q where:
