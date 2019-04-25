@@ -10,7 +10,7 @@ Useful Switches
 ```
 –-crawl=4 (depth of pages to crawl)
 --proxy=http://127.0.0.1:8080
-–identify-waf
+-–identify-waf
 --dbms=mssql|mysql|mysql 4|mysql 5|oracle|pgsql|sqlite|sqlite3|access|firebird|maxdb|sybase|BD2?
 --prefix=?????? - see below
 --suffix=?????? - see below
