@@ -24,6 +24,7 @@ Useful Switches
 -v 0-6
 --force-ssl
 --random-agent
+--flush-session
 
 # SQL injection techniques to use.
 # Valid: a string composed by B, E, U, S, T and Q where:
