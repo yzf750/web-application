@@ -27,5 +27,10 @@ Basic Auth Brute Force using BURP
 -----------------------------------
 ```
 http://www.dailysecurity.net/2013/03/22/http-basic-authentication-dictionary-and-brute-force-attacks-with-burp-suite/
+
+Steps
+In Intruder Tab highlight "Authorization Basic xxxxxxxxxxxxxxxxxx"
+Payloads Tab.....Finish later
+
 ```
 
