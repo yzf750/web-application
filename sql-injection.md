@@ -129,6 +129,8 @@ extractvalue('<xml>',concat("/",(select version())))
 Interesting items that can be used to prefix and suffix attacks
 ---------------------
 ```
+https://www.w3schools.com/tags/ref_urlencode.asp
+
 \ = %5c
 / = %2f
 ' = %27
