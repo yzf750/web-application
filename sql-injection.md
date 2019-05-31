@@ -72,9 +72,12 @@ SQLMap Tamper Data
 
 ```
 sqlmap --list-tampers
---tamper=space2comment
---tamper=charencode.py - URL-encodes all characters in a given payload (not processing already encoded) (e.g. SELECT -> %53%45%4C%45%43%54)
---tamper=charunicodeencode.py - Unicode-URL-encodes all characters in a given payload (not processing already encoded) (e.g. SELECT -> %u0053%u0045%u004C%u0045%u0043%u0054)
+# Very usefull
+--tamper=space2comment - Replaces space character (' ') with comments '/**/'
+
+--tamper=charencode - URL-encodes all characters in a given payload (not processing already encoded) (e.g. SELECT -> %53%45%4C%45%43%54)
+
+--tamper=charunicodeencode - Unicode-URL-encodes all characters in a given payload (not processing already encoded) (e.g. SELECT -> %u0053%u0045%u004C%u0045%u0043%u0054)
 ```
 
 ```
