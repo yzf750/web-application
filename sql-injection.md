@@ -38,8 +38,15 @@ Useful Switches
 # injection types only)
 # Default: BEUSTQ (means test for all SQL injection types - recommended)
 tech = BEUSTQ
+```
 
-
+Useful if the dev is filtering/removing single quotes
+-------------
+```
+# delimit ' by escaping with \ this will break the select statement
+examples
+username=\'&password=mypassword1*#
+username=%5C%27&password=password1*%23
 ```
 
 SQLite sample 
