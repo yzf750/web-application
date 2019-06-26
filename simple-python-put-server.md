@@ -35,6 +35,7 @@ Script
 ------------------------
 ```python
 #!/usr/bin/env python
+# ref: https://www.snip2code.com/Snippet/905666/Python-HTTP-PUT-test-server
 import sys
 import signal
 from threading import Thread
