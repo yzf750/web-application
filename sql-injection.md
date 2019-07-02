@@ -138,6 +138,13 @@ https://www.w3schools.com/tags/ref_urlencode.asp
 # = %23
 %0a = inserts a line feed
 
+# Add this to the end of the parameter, see what happens
+%60*
+
+# Handy if the dev is filtering for integer at the end of query
+--suffix="=1"
+--suffix="1"
+
 prefix='('
 prefix='\xBF'''
 prefix='%bf%27'
