@@ -18,4 +18,5 @@ Use to test if script "<script>alert(123)</script>" tags are being blocked
 -----------------------
 ```javascript
 ackerokm7x<img src=a onerror=alert(1)>y09fr
+ackerokm7x<img%20src=a%20onerror=alert(1)>y09fr
 ```
