@@ -10,6 +10,12 @@ python -m SimpleHTTPServer 80
 ```
 Mouseover test
 -----------------------
-```
+```javascript
 <a href="" onmouseover="javascript:alert('HackerOne MkSecurity Dom XSS');">Click for Detail</a>
+```
+
+Use to test if script "<script>alert(123)</script>" tags are being blocked
+-----------------------
+```javascript
+ackerokm7x<img src=a onerror=alert(1)>y09fr
 ```
