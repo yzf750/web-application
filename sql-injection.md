@@ -21,6 +21,8 @@ Useful Switches
 --search -C credit
 --search -C creditcard
 --list-tampers
+# useful to give example attacks, have to clean up extra junk around results
+--v 4 
 -v 0-6
 --force-ssl
 --random-agent
