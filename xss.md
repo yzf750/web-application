@@ -24,7 +24,7 @@ ackerokm7x<img%20src=a%20onerror=alert(1)>y09fr
 Testing for DOM based XSS
 -----------------------
 ```
-Modern browsers are not vulnerable, must use Internet Explorer for this to work. 
+Modern browsers are not vulnerable? Must use Internet Explorer for proof of vuln.
 Open Internet Explorer
 Press F12
 Select the "Emulation" tab
