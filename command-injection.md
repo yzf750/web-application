@@ -29,7 +29,7 @@ Interesting stuff
 ping 0
 # Zeros are optional
 ping 127.1
-'''
+```
 Windows
 ----------------------
 ```
