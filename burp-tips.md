@@ -34,3 +34,15 @@ Payloads Tab.....Finish later
 
 ```
 
+
+Load using Burp version 1.7.37 (Kerberos auth broken in Burp2)
+-----------------------------------
+```
+cd /opt/BurpSuitePro/
+java –jar ./burpsuite_pro.jar
+DO NOT UPDATE BURP
+select “choose file” at bottom of window if required. 
+browse for “/media/pentests/xxxxxxxxxxxxxx.burp”
+Verify Kerberos authentication settings are correct as outlined above.
+Begin pentest……………
+```
