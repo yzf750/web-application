@@ -1,8 +1,11 @@
 Default locations of wordlists files
 --------------------------
 ```bash
-root@kali:~#locate wordlist
+# Shows Kali list of wordlists
+root@kali:~#wordlists
 
+# Quick search for workdlists
+root@kali:~#locate wordlist
 # A few examples
 /usr/share/dirbuster/wordlists/apache-user-enum-1.0.txt
 /usr/share/dirbuster/wordlists/apache-user-enum-2.0.txt
