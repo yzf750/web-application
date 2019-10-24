@@ -247,6 +247,6 @@ bill' RLIKE (SELECT (CASE WHEN (3419=3400) THEN 0x62696c6c ELSE 0x28 END))-- yui
 Manual testing MySQL ORDER BY query
 --------------------
 ```
-# Use Burp to loop through number 7
-player=bill' order by 7-
+# Use Burp to loop through number 7 to find the number of columns
+player=bill' order by 7#
 ```
