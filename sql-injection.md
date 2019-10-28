@@ -147,6 +147,13 @@ https://www.w3schools.com/tags/ref_urlencode.asp
 # = %23
 %0a = inserts a line feed
 
+\
+/
+'
+--
+#
+%0a
+
 # Add this to the end of the parameter, see what happens
 %60*
 
