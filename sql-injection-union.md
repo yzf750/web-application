@@ -8,8 +8,9 @@ Notes
 Depending on identified injection technique use "#" or "--+" for comment.
 Should use "--+" when atttack in the URL
 
-Nice cheat sheet
+Nice cheat sheets
 https://www.perspectiverisk.com/mysql-sql-injection-practical-cheat-sheet/
+https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/
 
 It is possible to use ASCII HEX encoding for some of the variable names. (Use Burp decoder/encoder)
 Must be prefixed with "0x"
