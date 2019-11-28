@@ -96,7 +96,7 @@ Get Tables in Database
 ```
 
 
-Get Columns when table name is known
+Get Columns When Table Name is Known
 ------------------------------------
 ```
 # Table has 3 columns as identified above for this reason there are two "NULL" required. 
@@ -104,7 +104,7 @@ Get Columns when table name is known
 ```
 
 
-Get Data from columns MORE NOTES NEEDED 
+Get Data from Columns MORE NOTES NEEDED 
 ---------------------
 ```
 ADD CONCAT technique!!!!!!!!!!!!!!!!!!!
