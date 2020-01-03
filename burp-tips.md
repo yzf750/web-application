@@ -1,3 +1,29 @@
+BURP v2 run Passive scan (Including JavaScript Checks - Slow)
+-------------------------------------------------------------
+```
+Right Click target or area of target to scan
+
+Select "Scan"
+Select "Audit Selected Items"
+Click "Scan Configuration"
+Click "Select from Library"
+Select "Audit Checks - Passive"
+```
+
+
+BURP v2 run Passive scan (excluding JavaScript Checks - Fast)
+-------------------------------------------------------------
+```
+Right Click target or area of target to scan
+
+Select "Scan"
+Select "Audit Selected Items"
+Click "Scan Configuration"
+Click "New"
+Click "Issues Reported"
+Under "Select Scan by Type" un-check all except "Passive"
+```
+
 Burp Kerberos Authentication
 ------------------------
 ```
