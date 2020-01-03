@@ -24,6 +24,15 @@ Click "Issues Reported"
 Under "Select Scan by Type" un-check all except "Passive"
 ```
 
+Add Burp "Shortcut" to Desktop
+------------------------------
+```
+cd /opt/BurpSuitePro2/
+cp Burp\ Suite\ Professional.desktop ~/Desktop/
+Right Click "Burp\ Suite\ Professional.desktop" and select "Allow Launching"
+```
+
+
 Burp Kerberos Authentication
 ------------------------
 ```
