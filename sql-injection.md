@@ -10,6 +10,10 @@ sqlmap -r ./sqlmap-03.txt --level=5 --risk=3 --batch --prefix=%bf%27 --dbms=mysq
 Useful Switches
 ----------------
 ```
+
+--no-cast
+--no-escape
+
 –-crawl=4 (depth of pages to crawl)
 --proxy=http://127.0.0.1:8080
 -–identify-waf
