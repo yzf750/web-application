@@ -10,10 +10,12 @@ sqlmap -r ./sqlmap-03.txt --level=5 --risk=3 --batch --prefix=%bf%27 --dbms=mysq
 Useful Switches
 ----------------
 ```
+# To see more details on what sqlmap is doing
+# v 3 shows the payloads, --no-cast and --no-escape shows "human readable" requests
+sqlmap -r ./sqlmap-attack.txt --batch --no-cast --no-escape -v 3
 
 --no-cast
 --no-escape
-
 –-crawl=4 (depth of pages to crawl)
 --proxy=http://127.0.0.1:8080
 -–identify-waf
