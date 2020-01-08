@@ -1,6 +1,13 @@
 SQL Injection ERROR Based
 =========================
 
+CheatSheets
+-----------
+```
+https://www.perspectiverisk.com/mysql-sql-injection-practical-cheat-sheet/
+https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/
+```
+
 Detection
 ---------
 ```sql
