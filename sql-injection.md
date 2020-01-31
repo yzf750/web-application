@@ -152,6 +152,7 @@ https://www.w3schools.com/tags/ref_urlencode.asp
 -- = %2d%2d
 # = %23
 %0a = inserts a line feed
+%00 = inserts a nullbyte
 
 \
 /
