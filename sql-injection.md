@@ -14,6 +14,11 @@ Useful Switches
 # v 3 shows the payloads, --no-cast and --no-escape shows "human readable" requests
 sqlmap -r ./sqlmap-attack.txt --batch --no-cast --no-escape -v 3
 
+--skip-heuristics   Skip heuristic detection of SQLi/XSS vulnerabilities
+--skip-waf          Skip heuristic detection of WAF/IPS protection
+
+Run sqlmap with “–v 4” and “--no-escape” to get example attacks. Mileage may vary. 
+
 --no-cast
 --no-escape
 –-crawl=4 (depth of pages to crawl)
